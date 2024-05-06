@@ -8,17 +8,18 @@
   padding-bottom: 10px;
 }
 
+
 .navbar-nav .nav-link {
   font-size: 19px;
   font-weight: 300;
   font-family:  sans-serif;
   color: white;
   position: relative;
-  
 } 
 
  .nav-link:hover {
   opacity: 0.7;
+  transition: all 0.4s;
 }
 
 .navbar-nav .nav-link:not(.dropdown-toggle)::after{
@@ -31,6 +32,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
+  transition: all 0.8s;
 }
 
 .navbar-nav .nav-link:not(.dropdown-toggle):hover::after{
@@ -73,6 +75,7 @@
   border: 2px solid #fff; /* Randstil */
   border-radius: 5px; /* Abgerundete Ecken */
   transition: background-color 0.3s, color 0.3s; /* Flüssiger Übergang */
+  transition: all 0.8s;
 }
 
 .but-cus:hover {
@@ -157,6 +160,90 @@
   padding-bottom: 30px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 175%;
+}
+
+.angebot {
+  
+}
+
+.card-card {
+  margin: auto;
+  border-color: black;
+  border-width: 4px;
+  background-image: url(/img/back-card.jpg);
+  transition: all 0.7s;
+}
+
+.card-card:hover {
+  transform: scale(1.06);
+}
+
+.cus-img {
+  height: 50%;
+  width: 50%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: solid;
+  border-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border-width: 4px;
+  border-color: black;
+}
+
+.but-angebot {
+  background-color: orangered;
+  border-color: white;
+  transition: all 0.5s;
+}
+
+.but-angebot:hover {
+  color: orangered;
+  background-color: white;
+  border-color: white;
+  font-weight: bold;
+}
+
+.new-card {
+  max-height: 380px;
+  max-width: 700px;
+  margin: auto;
+  border: solid;
+  border-color: white;
+  border-width: 2px;
+  background-color: #08325f;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.card-news {
+  border: solid;
+  border-color: white;
+  border-width: 2px;
+  border-radius: 10px;
+  background-color: #08325f;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.but-cus-1{
+  background-color: #104a88;
+  border: solid;
+  border-color: white;
+  color: white;
+  border-width: 2px;
+  transition: all 0.5s;
+}
+
+.but-cus-1:hover {
+  background-color: white;
+  color: #08325f;
+  border-color: white;
+  font-weight: bold;
 }
 
 /* Footer Section */
