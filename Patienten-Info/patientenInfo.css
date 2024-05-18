@@ -21,6 +21,15 @@
   transition: all 0.4s;
 }
 
+.dropdown-menu {
+  background-color: rgba(30, 70, 110, 255);
+  color: white;
+}
+
+.dropdown-menu a {
+  color: white;
+}
+
 .navbar-nav .nav-link:not(.dropdown-toggle)::after{
   content: "";
   opacity: 0;

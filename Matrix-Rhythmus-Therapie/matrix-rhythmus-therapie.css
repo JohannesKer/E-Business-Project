@@ -58,6 +58,7 @@
   }
 }
 
+
 /* Hamburger menu */
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -68,6 +69,8 @@
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
+/* Hero Section */
+
 .c-item {
   height: 70vh;
 }
@@ -75,7 +78,7 @@
 .c-image {
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.5);
+  filter: brightness(1);
 }
 
 .but-cus {
@@ -108,113 +111,4 @@
     font-size: 40px;
     color: whitesmoke;
     margin-top: 25px;
-}
-
-/* Main Section */
-
-.main-section{
-  background-image: linear-gradient(rgba(102, 87, 87, 0.5), rgba(92, 80, 80, 0.5)),
-  url(/img/back-ground-main.jpg);
-  background-size: cover;
-  filter: brightness(1);
-}
-
-/*Team Section */
-
-.cus-card {
-  background-color: lightgray;
-}
-
-.custom-image {
-  height: 50%;
-  width: 50%;
-  object-fit: cover;
-  border-radius: 50%;
-  border: solid;
-  border-color: black;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  border-width: 1px;
-  border-color: black;
-}
-
-/* Css custom card */
-
-body {
-  background: #ddd;
-}
-
-.profile-area {
-  padding: 80px 0;
-}
-
-.profile-area .card {
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-  border-radius: 15px;
-  border-width: 0;
-  transition: all 1.2s;
-}
-
-.card:hover {
-  transform: scale(1.03);
-}
-
-.img1 img {
-  height: 200px;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
-  width: 100%;
-}
-
-.img2 img {
-  position: relative;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 1;
-  width: 140px;
-  height: 190px;
-  border-radius: 50%;
-  border: 5px solid white;
-  margin-top: -80px;
-  transition: all 0.7s;
-}
-
- 
-
-.main-text {
-  padding: 30px 0;
-  text-align: center;
-}
-
-.main-text h2 {
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 20px;
-  margin: 0 0 20px;
-}
-
-.main-text p {
-  font-size: 16px;
-  padding: 0 35px;
-}
-
-
-/* Footer Section */
-
-#main-footer {
-  background-color: #3A3A3A;
-  padding-top: 30px;
-  padding-bottom: 20px;
-}
-
-#main-footer p {
-  text-align: center;
-  color: white;
-}
-
-#main-footer p a {
-  color: white;
 }
