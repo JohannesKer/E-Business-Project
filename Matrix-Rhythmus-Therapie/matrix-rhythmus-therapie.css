@@ -78,7 +78,7 @@
 .c-image {
   height: 100%;
   object-fit: cover;
-  filter: brightness(1);
+  filter: brightness(0.8);
 }
 
 .but-cus {
@@ -110,5 +110,77 @@
 .cus-welc h2{
     font-size: 40px;
     color: whitesmoke;
-    margin-top: 25px;
+    margin-top: 50px;
+}
+
+/* Main Section */
+
+.main-section{
+  background-image: linear-gradient(rgba(102, 87, 87, 0.5), rgba(92, 80, 80, 0.5)),
+  url(/img/back-ground-main.jpg);
+  background-size: cover;
+  filter: brightness(1);
+}
+
+.card-body h2 {
+  margin-bottom: 30px; 
+  font-family: Arial, Helvetica, sans-serif; 
+  border-bottom: solid; 
+  border-width: 2px;
+  padding-bottom: 15px;
+  font-size: 35px;
+}
+
+.custom-matrix-button {
+  border: solid;
+  border-width: 1px;
+  background-color: rgb(24, 24, 70);
+}
+
+.custom-matrix-button:hover {
+  background-color: white;
+  color: #283042;
+}
+
+.row .card {
+  border: solid;
+  border-width: 2px;
+  background-color: #283042;
+  color: white;
+}
+
+.row ul {
+  padding-left: 0; /* Entfernt Standard-Einrückung */
+  list-style-type: none; /* Entfernt Standard-Aufzählungszeichen */
+}
+
+.row li {
+  display: flex; /* Aktiviert Flexbox für Listenelemente */
+  align-items: flex-start; /* Richtet Items am Anfang aus */
+  margin-bottom: 10px;
+}
+
+.row li::before {
+  content: "\2022"; /* Fügt benutzerdefiniertes Aufzählungszeichen hinzu (•) */
+  margin-right: 10px; /* Abstand zwischen Aufzählungszeichen und Text */
+}
+
+.row .list-text {
+  flex: 1; /* Nimmt den restlichen Platz ein und ermöglicht Umbrüche */
+}
+
+/* Footer Section */
+#main-footer {
+  background-color: #3A3A3A;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+#main-footer p {
+  text-align: center;
+  color: white;
+}
+
+#main-footer p a {
+  color: white;
 }

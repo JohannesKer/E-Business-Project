@@ -58,6 +58,7 @@
   }
 }
 
+
 /* Hamburger menu */
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -68,7 +69,7 @@
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-/*Hero Section */
+/* Hero Section */
 
 .c-item {
   height: 70vh;
@@ -77,7 +78,29 @@
 .c-image {
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.5);
+  filter: brightness(1);
+}
+
+.but-cus {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background-color: #08325f; /* Standard-Blau von Bootstrap */
+  border: 2px solid #fff; /* Randstil */
+  border-radius: 5px; /* Abgerundete Ecken */
+  transition: background-color 0.3s, color 0.3s; /* Flüssiger Übergang */
+  transition: all 0.8s;
+}
+
+.but-cus:hover {
+  background-color: #fff; /* Dunkleres Blau im Hover-Zustand */
+  color: #007bff;
+  border-color: #fff;
 }
 
 .hero-section {
@@ -87,91 +110,27 @@
 .cus-welc h2{
     font-size: 40px;
     color: whitesmoke;
-    margin-top: 45px;
+    margin-top: 25px;
 }
 
-/* Main Section */
-
-.main-section{
-  background-image: linear-gradient(rgba(102, 87, 87, 0.5), rgba(92, 80, 80, 0.5)),
-  url(/img/back-ground-main.jpg);
-  background-size: cover;
-  filter: brightness(1);
-}
-
-/* Accordion */
-
-.accordion {
-  margin: 60px auto;
-  max-width: 700px;
-  padding-left: 10px;
-}
-
-.accordion li {
-  list-style: none;
-  width:  100%;
-  margin: 20px;
-  padding: 10px;
-  border-radius: 8px;
-  background: #e3edf7;
-  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-              -6px -6px 10px -1px rgba(155, 255, 255, 0.7);
-              background-color: #283042;
-              color: white;
-}
-
-.accordion p {
+.card-cus {
   font-family: Arial, Helvetica, sans-serif;
-  color: black;
-  font-weight: 300;
+  font-size: 16px;
+  border-width: 3px;
+  border-color: white;
+  background-color: #283042;
   color: white;
 }
 
-.accordion li label {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
+.cus-cus {
+  border-bottom: solid;
+  border-bottom-width: 3px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
-label::before {
-  content: '+';
-  margin-right: 10px;
-  font-size: 24px;
-  font-weight: 600;
-}
-
-input[type="radio"] {
-  display: none;
-}
-
-.accordion .content {
-  color: #555;
-  padding: 0 10px;
-  line-height: 26px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s, padding 0.5s;
-}
-
-.accordion input[type="radio"]:checked + label + .content {
-  max-height: 400px;
-  padding: 10px 10px 20px;
-}
-
-.accordion input[type="radio"]:checked + label::before {
-  content: '-';
-}
-
-.image-cus {
-  width: 100%;
-  height: 50%;
-  object-fit: cover;
-  max-height: 600px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+.card-footer h4, h5{
+  color: #F88379;
 }
 
 /* Footer Section */

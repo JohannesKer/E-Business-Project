@@ -145,11 +145,11 @@
   margin-right: auto;
   margin-top: 20px;
   border-width: 4px;
-  border-color: black;
+  border-color: white;
+  background: whitesmoke;
 }
 
 .new-card {
-  max-height: 380px;
   max-width: 700px;
   margin: auto;
   border: solid;
@@ -179,14 +179,13 @@
   border-color: white;
   color: white;
   border-width: 2px;
-  transition: all 0.5s;
+  transition: all 0.7s;
 }
 
 .but-cus-1:hover {
   background-color: white;
-  color: #08325f;
+  color: #104a88;
   border-color: white;
-  font-weight: bold;
 }
 
 /* Test showcase */
@@ -206,13 +205,13 @@ body {
   border-width: 0;
   transition: all 1.2s;
   max-height: 800px;
-  border-width: 2px;
-  border-color: black;
+  border-width: 3px;
+  border-color: white;
   color: white;
 }
 
 .profile-area .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .img1 img {
@@ -220,11 +219,11 @@ body {
   border-radius: 50%;
   width: 130px;
   margin: auto;
-  border: solid 2px;
-  border-color: black;
+  border: solid 3px;
+  border-color: white;
   margin-top: 20px;
   margin-bottom: 10px;
-  background-color: white;
+  background-color: whitesmoke;
 }
 
 .img2 img {
@@ -244,18 +243,16 @@ body {
   background-color: white;
 }
 
- 
-
 .main-text {
   padding: 30px 0;
   text-align: center;
   border: solid;
   margin: 10px;
   border-radius: 10px;
-  border-width: 1px;
+  border-width: 3px;
   border-color: white;
-  background-color: white;
-  color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .main-text h2 {
@@ -271,7 +268,7 @@ body {
 }
 
 .but-angebot {
-  background-color: rgb(5, 5, 80);;
+  background-color: rgb(24, 24, 70);
   border-color: white;
   transition: all 0.5s;
   color: white;
@@ -281,9 +278,7 @@ body {
   color: black;
   background-color: white;
   border-color: black;
-
 }
-
 
 /* Footer Section */
 
