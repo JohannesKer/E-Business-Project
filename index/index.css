@@ -78,7 +78,6 @@
 .c-image {
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.5);
 }
 
 .but-cus {
@@ -99,7 +98,7 @@
 
 .but-cus:hover {
   background-color: #fff; /* Dunkleres Blau im Hover-Zustand */
-  color: #007bff;
+  color: #08325f;
   border-color: #fff;
 }
 
@@ -108,7 +107,7 @@
 }
 
 .cus-welc h2{
-    font-size: 50px;
+    font-size: 45px;
     color: whitesmoke;
     margin-top: 110px;
 }
