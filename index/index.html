@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script defer src="/index/index.js"></script>
   <link rel="stylesheet" type="text/css" href="/index/index.css" />
 </head>
 <body>
@@ -15,7 +16,7 @@
   </div>
 </div>
 
-  <nav class="navbar navbar-light navbar-light  navbar-expand-lg fixed-top nav-cus" style="background-color: rgba(30, 70, 110, 255); border-bottom: solid; border-width: 2px; border-color: white;">
+  <nav class="navbar navbar-light navbar-expand-lg fixed-top nav-cus">
     <div class="container">
     <a href="#" class="navbar-brand mb-0 h1">
       <img class="d-line-block align-top" src="/img/logo.png" alt="text" style="width: 45px; height: 45px;">
@@ -66,9 +67,9 @@
             Therapiehund
           </a>
           <ul class="dropdown-menu" aria-label="navbarDropdown2">
-            <li><a href="#" class="dropdown-item">Wer bin ich?</a></li>
-            <li><a href="#" class="dropdown-item">Ausbildung</a></li>
-            <li><a href="#" class="dropdown-item">Auszeichnungen</a></li>
+            <li><a href="/WerBinIch/werBinIch.html" class="dropdown-item">Wer bin ich?</a></li>
+            <li><a href="/Ausbildung/ausbildung.html" class="dropdown-item">Ausbildung</a></li>
+            <li><a href="/Auszeichnungen/auszeichnungen.html" class="dropdown-item">Auszeichnungen</a></li>
             <li><a href="/Bildergalerie/bildergalerie.html" class="dropdown-item">Bildergalerie</a></li>
           </ul>
         </li>
@@ -82,8 +83,7 @@
   </nav>
 
   <section class="hero-section" style="">
-    <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-      
+    <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">  
       <div class="carousel-inner">
         <div class="carousel-item active c-item " data-bs-interval="5000">
           <img src="/img/berge1.jpg" class="d-block w-100 c-image" alt="Bild 1" style="filter: brightness(1.4);">
@@ -121,15 +121,14 @@
     </div>
   </section> 
 
-  <div class="main-section">
-    
+  <div class="main-section">  
     <div class="container text-center pb-5" style="padding-top: 50px;">
       <div class="row">
         <div class="col-md-5 cus-welc">
           <h2>Herzlich Willkommen in unserer Praxis</h2>
         </div>
-        <div class="col-md-7" style="color: white; border-left: solid;">
-              Meine moderne Physiotherapiepraxis bietet Ihnen das gesamte Spektrum der physikalischen Therapie und ist
+        <div class="col-md-7 text-part">
+            <p class="hidden">  Meine moderne Physiotherapiepraxis bietet Ihnen das gesamte Spektrum der physikalischen Therapie und ist
               zugelassen bei allen gesetzlichen und privaten Krankenkassen, sowie bei der Berufsgenossenschaft. <br> <br>
 
               Das Schöne an meinem Beruf und meiner Praxis ist,
@@ -141,51 +140,11 @@
               In diesem Sinne wünsche ich Ihnen viel Vergnügen beim Betrachten der Seiten
               und freue mich auf Ihren Besuch bei mir in der Praxis! <br> <br>
 
-              Ihre Beatrice Peschel mit Team
+              Ihre Beatrice Peschel mit Team </p>
         </div>
       </div>
      </div>  
     </div>
-<!--
-    <div class="" style="min-height: 750px; padding-bottom: 25px;">
-      <div class="container">
-        <h2 style="text-align: center; font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 55px; padding-top: 40px; padding-bottom: 30px; color: rgb(25,25,112);">Unser Angebot</h2>
-        <div class="container text-center">
-          <div class="row gy-4">
-            <div class="col-md-4">
-              <div class="card card-card h-100">
-                <img src="/img/therpieangebot.png" class="card-img-top cus-img" alt="Therapieangebot">
-                <div class="card-body">
-                  <h5 class="card-title">Therapieangebot</h5>
-                  <p class="card-text" style="font-family: Arial, Helvetica, sans-serif;">Entdecken Sie unser umfangreiches Therapieangebot, das darauf abzielt, Ihr Wohlbefinden und Ihre Gesundheit zu verbessern. Unsere Therapieoptionen umfassen eine Vielzahl von Ansätzen, die darauf ausgerichtet sind, individuelle Bedürfnisse zu erfüllen und eine ganzheitliche Heilung zu fördern.</p>
-                  <a href="#" class="btn btn-primary but-angebot">Erfahre Mehr</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card card-card h-100">
-                <img src="/img/wellness.png" class="card-img-top cus-img" alt="Wellnessangebot">
-                <div class="card-body">
-                  <h5 class="card-title">Wellnessangebot</h5>
-                  <p class="card-text" style="font-family: Arial, Helvetica, sans-serif;">Entdecken Sie unser vielfältiges Wellnessangebot, das darauf abzielt, Ihre körperliche, geistige und emotionale Gesundheit zu fördern. Wellness ist ein ganzheitlicher Ansatz, der Ihr gesamtes Wohlbefinden verbessert und Ihnen hilft, Ihr volles Potenzial zu entfalten.</p>
-                  <a href="#" class="btn btn-primary but-angebot">Erfahre Mehr</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card card-card h-100">
-                <img src="/img/sonstiges.png" class="card-img-top cus-img" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Sonstiges</h5>
-                  <p class="card-text" style="font-family: Arial, Helvetica, sans-serif;">Entdecken Sie unsere verschiedenen Angebote wie die Matrix-Rhythmus-Massage, die Ihre körperliche, geistige und emotionale Gesundheit fördert. Unsere Dienstleistungen unterstützen Sie dabei, Ihr volles Potenzial zu entfalten und Ihr Wohlbefinden zu verbessern.</p>
-                  <a href="#" class="btn btn-primary but-angebot">Erfahre Mehr</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
 
     <!-- Test showcase -->
     <div class="profile-area" style="background-color: #3c4053;">
@@ -196,7 +155,7 @@
             <div class="img1 mx-auto"><img src="/img/therpieangebot.png" alt=""></div> 
             <div class="main-text h-100">
               <h2>Therapieangebot</h2>
-              <p style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;">Entdecken Sie unser umfangreiches Therapieangebot, das darauf abzielt, Ihr Wohlbefinden und Ihre Gesundheit zu verbessern. Unsere Therapieoptionen umfassen eine Vielzahl von Ansätzen, die darauf ausgerichtet sind, individuelle Bedürfnisse zu erfüllen und eine ganzheitliche Heilung zu fördern.</p>
+              <p style="font-family: Arial, Helvetica, sans-serif;">Entdecken Sie unser umfangreiches Therapieangebot, das darauf abzielt, Ihr Wohlbefinden und Ihre Gesundheit zu verbessern. Unsere Therapieoptionen umfassen eine Vielzahl von Ansätzen, die darauf ausgerichtet sind, individuelle Bedürfnisse zu erfüllen und eine ganzheitliche Heilung zu fördern.</p>
               <a href="/Therapieangebot/therapieangebot.html" class="btn btn-primary but-angebot">Erfahre Mehr</a>
             </div>
           </div>
@@ -206,8 +165,8 @@
             <div class="img1 mx-auto"><img src="/img/wellness.png" alt=""></div>
             <div class="main-text h-100">
               <h2>Wellnessangebot</h2>
-              <p style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;">Entdecken Sie unser vielfältiges Wellnessangebot, das darauf abzielt, Ihre körperliche, geistige und emotionale Gesundheit zu fördern. Wellness ist ein ganzheitlicher Ansatz, der Ihr gesamtes Wohlbefinden verbessert und Ihnen hilft, Ihr volles Potenzial zu entfalten.</p>
-              <a href="#" class="btn btn-primary but-angebot">Erfahre Mehr</a>
+              <p style="font-family: Arial, Helvetica, sans-serif;">Entdecken Sie unser vielfältiges Wellnessangebot, das darauf abzielt, Ihre körperliche, geistige und emotionale Gesundheit zu fördern. Wellness ist ein ganzheitlicher Ansatz, der Ihr gesamtes Wohlbefinden verbessert und Ihnen hilft, Ihr volles Potenzial zu entfalten.</p>
+              <a href="/Wellnessangebot/wellnessangebot.html" class="btn btn-primary but-angebot">Erfahre Mehr</a>
             </div>
           </div>
         </div>
@@ -216,7 +175,7 @@
             <div class="img1 mx-auto"><img src="/img/sonstiges.png" alt=""></div>
             <div class="main-text h-100">
               <h2>Sonstiges</h2>
-              <p style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;">Entdecken Sie unsere verschiedenen Angebote wie die Matrix-Rhythmus-Massage, die Ihre körperliche, geistige und emotionale Gesundheit fördert. Unsere Dienstleistungen unterstützen Sie dabei, Ihr volles Potenzial zu entfalten und Ihr Wohlbefinden zu verbessern.</p>
+              <p style="font-family: Arial, Helvetica, sans-serif;">Entdecken Sie unsere verschiedenen Angebote wie die Matrix-Rhythmus-Massage, die Ihre körperliche, geistige und emotionale Gesundheit fördert. Unsere Dienstleistungen unterstützen Sie dabei, Ihr volles Potenzial zu entfalten und Ihr Wohlbefinden zu verbessern.</p>
               <a href="/Matrix-Rhythmus-Therapie/matrix-rhythmus-therapie.html" class="btn btn-primary but-angebot">Erfahre Mehr</a>
             </div>
           </div>
@@ -225,7 +184,7 @@
       </div>
     </div>
 
-    <div class="info" style="background-color: #535b5c; padding-top: 40px; padding-bottom: 40px;">
+    <div class="info" style="background-color: #3c4053; padding-top: 40px; padding-bottom: 40px; border-top: solid 3px white;">
       <div class="container">
         <div class="container text-center">
           <div class="row gy-4">
@@ -267,7 +226,7 @@
 
 <footer id="main-footer">
   <div class="standard-container">
-    <p>&copy; Beatrice Peschel, All rights reserved | <a href="#">Impressum</a> | <a href="#">Datenschutzerklärung</a></p>
+    <p>&copy; Beatrice Peschel, All rights reserved | <a href="/Impressum/impressum.html">Impressum</a> | <a href="#">Datenschutzerklärung</a></p>
   </div>
 </footer>
   

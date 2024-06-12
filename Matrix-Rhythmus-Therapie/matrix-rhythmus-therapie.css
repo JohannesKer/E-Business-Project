@@ -113,6 +113,18 @@
     margin-top: 50px;
 }
 
+@media(max-width: 300px) {
+  .cus-welc h2{
+    font-size: 25px;
+    color: whitesmoke;
+    margin-top: 45px;
+}
+
+.cus-welc p {
+  font-size: 6px;
+}
+}
+
 /* Main Section */
 
 .main-section{
@@ -122,6 +134,22 @@
   filter: brightness(1);
 }
 
+.text-part {
+  color: white; 
+  border-left: solid; 
+  padding-top: 30px;
+}
+
+@media(max-width: 767px) {
+  .text-part{
+    color: white; 
+    border-top: solid;
+    border-left: none;
+    margin-top: 10px;
+    padding-top: 16px;
+  }
+}
+
 .card-body h2 {
   margin-bottom: 30px; 
   font-family: Arial, Helvetica, sans-serif; 
@@ -129,6 +157,28 @@
   border-width: 2px;
   padding-bottom: 15px;
   font-size: 35px;
+}
+
+@media(max-width: 350px) {
+  .card-body h2 {
+    margin-bottom: 30px; 
+    font-family: Arial, Helvetica, sans-serif; 
+    border-bottom: solid; 
+    border-width: 2px;
+    padding-bottom: 15px;
+    font-size: 25px;
+  }
+}
+
+@media(max-width: 270px) {
+  .card-body h2 {
+    margin-bottom: 30px; 
+    font-family: Arial, Helvetica, sans-serif; 
+    border-bottom: solid; 
+    border-width: 2px;
+    padding-bottom: 15px;
+    font-size: 20px;
+  }
 }
 
 .custom-matrix-button {

@@ -68,21 +68,9 @@
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-.gallery {
-  background-color: #dbddf1;
-  padding: 80px 0;
-}
-
-.gallery img {
-  background-color: #ffffff;
-  padding: 15px;
-  width: 100%;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-}
-
-#gallery-model .modal-img{
-  width: 100%;
+h4 {
+  font-weight: bold;
+  color: #c4766f;
 }
 
 /* Footer Section */
@@ -100,4 +88,11 @@
 
 #main-footer p a {
   color: white;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }

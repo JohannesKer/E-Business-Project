@@ -90,6 +90,18 @@
     margin-top: 10px;
 }
 
+@media(max-width: 300px) {
+  .cus-welc h2{
+    font-size: 25px;
+    color: whitesmoke;
+    margin-top: 45px;
+}
+
+.cus-welc p {
+  font-size: 6px;
+}
+}
+
 /* Main Section */
 
 .main-section{
@@ -97,6 +109,22 @@
   url(/img/back-ground-main.jpg);
   background-size: cover;
   filter: brightness(1);
+}
+
+.text-part {
+  color: white; 
+  border-left: solid; 
+  padding-top: 30px;
+}
+
+@media(max-width: 767px) {
+  .text-part{
+    color: white; 
+    border-top: solid;
+    border-left: none;
+    margin-top: 10px;
+    padding-top: 16px;
+  }
 }
 
 /* Accordion Section */
@@ -221,7 +249,18 @@
   }
 }
 
+@media(max-width: 300px) {
+  .answer p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.8rem;
+    padding: 0rem;
+  }
 
+  .accordion-item p{ 
+      padding: 1rem 0;
+      font-size: 0.95rem; 
+  }
+}
 
 /* Footer Section */
 #main-footer {
