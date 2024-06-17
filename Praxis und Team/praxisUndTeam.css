@@ -1,28 +1,59 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* Navbar Section */
 
 .navbar {
   margin-bottom: 12px;
-  margin-top: 22px;
+  margin-top: 28px;
   border-radius: 0px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
+.nav-cus {
+  background-image: linear-gradient(rgba(212, 48, 48, 0.5), rgba(226, 32, 32, 0.5)),
+  url(/img/orangered.jpg);
+  border-bottom: solid; border-width: 2.5px; 
+  border-color: whitesmoke;
+}
+
 .navbar-nav .nav-link {
-  font-size: 19px;
-  font-weight: 300;
-  font-family:  sans-serif;
-  color: white;
+  font-size: 27px;
+  font-weight: 500;
+  font-family:  Arima;
+  color: whitesmoke;
   position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
 } 
 
+@media(max-width: 1210px){
+  .navbar-nav .nav-link {
+    font-size: 27px;
+    font-weight: 500;
+    font-family:  Arima;
+    color: whitesmoke;
+    position: relative;
+    margin-left: 0px;
+    margin-right: 0px;
+  } 
+}
+
  .nav-link:hover {
-  opacity: 0.8;
-  transition: all 0.4s;
+  opacity: 0.9;
+  transition: all 0.8s;
+  color: black;
 }
 
 .dropdown-menu {
-  background-color: rgba(30, 70, 110, 255);
+  background-image: linear-gradient(rgba(212, 48, 48, 0.5), rgba(226, 32, 32, 0.5)),
+  url(/img/orangered.jpg);
   color: white;
 }
 
@@ -30,13 +61,18 @@
   color: white;
 }
 
+.dropdown-menu a:hover {
+  color: black;
+  background: linear-gradient(to right,rgba(255, 165, 0, 0.9), rgba(255, 223, 186, 0.8));
+}
+
 .navbar-nav .nav-link:not(.dropdown-toggle)::after{
   content: "";
   opacity: 0;
-  transition: all 0.3s;
-  height: 1.7px;
+  transition: all 0.8s;
+  height: 2.6px;
   width: 100%;
-  background-color: white;
+  background-color: black;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -57,6 +93,7 @@
     margin-top: 0;
   }
 }
+
 
 /* Hamburger menu */
 .navbar-toggler-icon {
@@ -105,9 +142,9 @@
 }
 
 .cus-welc h2{
-    font-size: 40px;
+    font-size: 50px;
     color: whitesmoke;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 @media(max-width: 300px) {
@@ -125,8 +162,8 @@
 /* Main Section */
 
 .main-section{
-  background-image: linear-gradient(rgba(102, 87, 87, 0.5), rgba(92, 80, 80, 0.5)),
-  url(/img/back-ground-main.jpg);
+  background-image: linear-gradient(rgba(223, 21, 21, 0.2), rgba(216, 20, 20, 0.2)),
+  url(/img/orangered.jpg);
   background-size: cover;
   filter: brightness(1);
 }
@@ -174,7 +211,7 @@ body {
 }
 
 .profile-area {
-  padding: 100px 0;
+  padding: 70px 0;
 }
 
 .profile-area .card {
@@ -186,6 +223,30 @@ body {
   border: solid 2px white;
   cursor: pointer;
   font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(rgba(212, 48, 48, 0.2), rgba(226, 32, 32, 0.2)),
+  url(/img/orangered.jpg);
+  max-width: 300px;
+  margin: auto;
+}
+
+.profile-area h2 {
+  text-align: center; 
+  color: whitesmoke; 
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8); 
+  margin-bottom: 50px;
+}
+
+@media(max-width: 285px) {
+  .profile-area h2 {
+    text-align: center; 
+    color: whitesmoke; 
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8); 
+    margin-bottom: 50px;
+    font-size: 20px;
+    word-wrap: break-word; 
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
 }
 
 .card:hover {
@@ -233,11 +294,31 @@ body {
   padding: 0 35px;
 }
 
+.outer img{
+  object-fit: cover; 
+  height: 100%; 
+  width: 100%;
+  border: solid white 2.5px;
+}
+
+.outer h3 {
+  text-align: center;
+  color: whitesmoke;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
+  font-size: 32px;
+}
+
+.outer p {
+  color: whitesmoke;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
+  font-size: 18px;
+}
+
 
 /* Footer Section */
 
 #main-footer {
-  background-color: #3A3A3A;
+  background-color: black;
   padding-top: 30px;
   padding-bottom: 20px;
 }

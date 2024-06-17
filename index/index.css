@@ -5,6 +5,19 @@ body, html {
   height: 100%;
 }
 
+.top-nav p{
+  margin-top: auto; 
+  text-align: right; 
+  font-size: 19px; 
+  color: black;
+}
+
+@media(max-width: 220px) {
+  .top-nav p{
+    font-size: 17px;
+  }
+}
+
 /* Navbar Section */
 
 .navbar {
@@ -152,29 +165,18 @@ body, html {
 .cus-welc h2{
     font-size: 45px;
     color: whitesmoke;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
-@media(max-width: 300px) {
-  .cus-welc h2{
-    font-size: 25px;
-    color: whitesmoke;
-    margin-top: 45px;
-}
-}
-
-/* Main Section */
-
-.main-section{
-  background-image: linear-gradient(rgba(223, 21, 21, 0.3), rgba(216, 20, 20, 0.3)),
-  url(/img/orangered.jpg);
-  background-size: cover;
-  filter: brightness(1.1);
-}
-
-.text-part {
+.text-part{
   color: white; 
   border-left: solid;
+}
+
+.text-part p {
+  font-size: 20px; 
+  font-family: Arial, Helvetica, sans-serif; 
+  font-weight: 500;
 }
 
 @media(max-width: 767px) {
@@ -185,12 +187,33 @@ body, html {
     margin-top: 10px;
     padding-top: 10px;
   }
+  .text-part p {
+    font-size: 20px; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: 500;
+  }
 }
 
-.main-section p {
-
+@media(max-width: 300px) {
+  .cus-welc h2{
+    font-size: 25px;
+    color: whitesmoke;
+    margin-top: 45px;
 }
 
+.text-part  p{
+  font-size: 15px;
+}
+}
+
+/* Main Section */
+
+.main-section{
+  background-image: linear-gradient(rgba(223, 21, 21, 0.3), rgba(87, 10, 10, 0.5)),
+  url(/img/orangered.jpg);
+  background-size: cover;
+  filter: brightness(1.1);
+}
 
 .card-card {
   margin: auto;
@@ -220,8 +243,6 @@ body, html {
 }
 
 .new-card {
-  max-width: 700px;
-  margin: auto 20px;
   border: solid;
   border-color: white;
   border-width: 2px;
@@ -243,8 +264,14 @@ body, html {
   url(/img/orangered.jpg); 
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  margin: auto 20px;
+  margin: auto;
 }
+@media(max-width: 300px) {
+  .info p{
+    font-size: 12px;
+  }
+}
+
 
 .but-cus-1{
   background-color: tomato;
@@ -287,7 +314,7 @@ body {
   cursor: pointer; 
   margin: auto 22px;
   opacity: 0.95;
-  filter: brightness(0.85);
+  filter: brightness(1);
 }
 
 .main-text p {
@@ -343,7 +370,7 @@ body {
 }
 
 .profile-area .card:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 .img1 img {
@@ -419,7 +446,7 @@ body {
 }
 
 .but-angebot {
-  background-color: tomato;
+  background-color: rgba(100, 19, 19, 0.5);
   border-color: white;
   transition: all 0.5s;
   color: white;
@@ -428,14 +455,50 @@ body {
 
 .but-angebot:hover {
   color: white;
-  background: linear-gradient(to right,rgba(255, 165, 0, 0.9), rgba(255, 223, 186, 0.8));
   border-color: white;
+  background-color: rgba(10, 2, 2, 0.5);
+}
+
+.outer img{
+  object-fit: cover; 
+  height: 100%; 
+  width: 100%;
+  border: solid white 2.5px;
+}
+
+.outer h3 {
+  text-align: center;
+  color: whitesmoke;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
+  font-size: 32px;
+}
+
+.outer p {
+  color: whitesmoke;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
+  font-size: 18px;
+}
+
+.button-new {
+  padding: 6px 30px;
+  border-radius: 6px;
+  background-color: rgba(100, 19, 19, 0.5);
+  color: white;
+  border-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.button-new:hover {
+  color: white;
+  border-color: white;
+  background-color: rgba(10, 2, 2, 0.5);
 }
 
 /* Footer Section */
 
 #main-footer {
-  background-color: #3A3A3A;
+  background-color: black;
   padding-top: 30px;
   padding-bottom: 20px;
 }
