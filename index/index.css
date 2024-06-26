@@ -29,7 +29,7 @@ body, html {
 }
 
 .nav-cus {
-  background-image: linear-gradient(rgba(212, 48, 48, 0.5), rgba(226, 32, 32, 0.5)),
+  background-image: linear-gradient(to left, rgba(255, 165, 0, 0.5), rgba(255, 69, 0, 0.3)),
   url(/img/orangered.jpg);
   border-bottom: solid; border-width: 2.5px; 
   border-color: whitesmoke;
@@ -121,12 +121,15 @@ body, html {
 /* Hero Section */
 
 .c-item {
-  height: 643px;
+  height: 80vh;
 }
 
 @media(max-width: 300px){
+  .h-cus{
+    display: none;
+  }
   .c-item {
-    height: 200px;
+    height: 50vh;
   }
 }
 
@@ -357,8 +360,8 @@ body {
     border-width: 3px;
     border-color: white;
     color: white;
-    background-image: linear-gradient(rgba(212, 48, 48, 0.5), rgba(226, 32, 32, 0.5)),
-    url(/img/orangered.jpg); 
+    background-image: linear-gradient(rgba(206, 92, 92, 0.5), rgba(63, 8, 8, 1)),
+              url(/img/hintergrundB.jpg); 
     cursor: pointer; 
     margin: auto 0px;
   }
@@ -425,6 +428,7 @@ body {
 @media(max-width: 300px) {
   .profile-area h2 {
     font-size: 16px;
+    display: block;
   }
 
   .profile-area p {

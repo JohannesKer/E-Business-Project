@@ -5,20 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wellnessangebot</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="icon" href="/img/testLogo.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/Wellnessangebot/wellnessangebot.css"/>
 </head>
 <body>
 
-  <div class="fixed-top" style="background-color: rgb(153, 175, 194); font-size: 80%; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+  <div class="fixed-top" style="background: linear-gradient(to right,rgba(236, 127, 1, 1),rgba(211, 137, 1, 1)); font-size: 80%; font-family: Arial, Helvetica, sans-serif;">
     <div class="top-nav container">
-      <p class="" style="margin-top: 2px; text-align: right;"><img style="height: 15px; width: 15px;" src="/img/standort.png" alt=""> Oberer Stadtplatz 7, 94469 Deggendorf <img style="height: 15px; width: 15px; margin-left: 26px;" src="/img/telefon.png" alt=""> <a style="cursor: pointer;"> 0991 / 320 9199</a> </p>
+      <p class="" style="margin-top: auto; text-align: right; font-size: 19px; color: black;"><a style="cursor: pointer; margin-right: 20px;"><ion-icon name="location-sharp"></ion-icon> Oberer Stadtplatz 7, 94469 Deggendorf</a> <a style="cursor: pointer;"><ion-icon name="call-outline"></ion-icon> 0991 / 320 9199 </a></p>
     </div>
   </div>
-  
-  <nav class="navbar navbar-light navbar-light  navbar-expand-lg fixed-top nav-cus" style="background-color: rgba(30, 70, 110, 255); border-bottom: solid; border-width: 2px; border-color: white;">
+
+  <nav class="navbar navbar-light navbar-expand-lg fixed-top nav-cus">
     <div class="container">
     <a href="#" class="navbar-brand mb-0 h1">
-      <img class="d-line-block align-top" src="/img/logo.png" alt="text" style="width: 45px; height: 45px;">
+
       
     </a>
     <button class="navbar-toggler" type="button" 
@@ -36,10 +40,7 @@
           <a href="/index/index.html" class="nav-link">Home</a>
         </li>
         <li class="nav-item">
-          <a href="/Über Mich/überMich.html" class="nav-link">Über mich</a>
-        </li>
-        <li class="nav-item">
-          <a href="/Praxis und Team/praxisUndTeam.html" class="nav-link">Praxis und team</a>
+          <a href="/Praxis und Team/praxisUndTeam.html" class="nav-link">Team</a>
         </li>
         <li class="nav-item">
           <a href="/Patienten-Info/patientenInfo.html" class="nav-link">Patienten-Info</a>
@@ -53,9 +54,8 @@
           </a>
           <ul class="dropdown-menu" aria-label="navbarDropdown1">
             <li><a href="/Therapieangebot/therapieangebot.html" class="dropdown-item">Therapieangebot</a></li>
-          <li><a href="/Wellnessangebot/wellnessangebot.html" class="dropdown-item">Wellnessangebot</a></li>
-          <li><a href="/Angebot für Privatpatienten/angebotFürPrivatpatienten.html" class="dropdown-item">Angebot für Privatpatienten</a></li>
-          <li><a href="/Matrix-Rhythmus-Therapie/matrix-rhythmus-therapie.html" class="dropdown-item">Matrix-Rhythmus-Therapie</a></li>
+            <li><a href="/Wellnessangebot/wellnessangebot.html" class="dropdown-item">Wellnessangebot</a></li>
+            <li><a href="/Matrix-Rhythmus-Therapie/matrix-rhythmus-therapie.html" class="dropdown-item">Matrix-Rhythmus-Therapie</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -67,9 +67,7 @@
           </a>
           <ul class="dropdown-menu" aria-label="navbarDropdown2">
             <li><a href="/WerBinIch/werBinIch.html" class="dropdown-item">Wer bin ich?</a></li>
-          <li><a href="/Ausbildung/ausbildung.html" class="dropdown-item">Ausbildung</a></li>
-          <li><a href="/Auszeichnungen/auszeichnungen.html" class="dropdown-item">Auszeichnungen</a></li>
-          <li><a href="/Bildergalerie/bildergalerie.html" class="dropdown-item">Bildergalerie</a></li>
+            <li><a href="/Bildergalerie/bildergalerie.html" class="dropdown-item">Bildergalerie</a></li>
           </ul>
         </li>
         
@@ -81,37 +79,31 @@
   </div>
   </nav>
 
-  <section class="hero-section" style="">
+  <section class="hero-section">
     <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active c-item " data-bs-interval="5000">
-          <img src="/img/nature1.jpg" class="d-block w-100 c-image" alt="Bild 1" style="filter: brightness(1.2);">
-          <div class="carousel-caption top-0 mt-5 d-none d-md-block">
+        <div class="carousel-item active c-item">
+          <img src="/img/road.jpg" class="d-block w-100 c-image" alt="Bild 1" style="filter: brightness(0.9); opacity: 1;">
+          <div class="carousel-caption d-flex justify-content-center align-items-center" style="height: 100%;">
+            <h1 class="display-1 fw-bolder text-capitalize text-center" style="color: white; font-family: Arial, Helvetica, sans-serif; text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.95);">Entdecken sie <br>unser Wellnessangebot</h1>
           </div> 
-        </div> 
+        </div>
       </div>
     </div>
   </section>
 
-  <div class="main-section">
-    <div class="container text-center pb-5" style="padding-top: 50px;">
-      <div class="row">
-        <div class="col-md-5 cus-welc">
-          <h2 class="text-center">Wellnessangebot - Preise auf Nachfrage</h2>
-          
-        </div>
-        <div class="col-md-7 text-part">
-         <p class="" style="text-align: justify; text-align-last: left; padding-left: 4px;">Neben der Behandlung auf Rezeptbasis biete ich Ihnen vielfältige Möglichkeiten, selbst etwas für Ihre Gesundheit zu tun.
-          Bitte beachten Sie, dass bei vorhandenen Erkrankungen eine Untersuchung durch Ihren Arzt und eine Unbedenklichkeitsbescheinigung notwendig sind.
-          Damit ich Sie optimal betreuen kann, muss ich sicher sein, dass keine Kontraindikationen für eine Behandlung vorliegen.</p>
-        </div>
-      </div>
-     </div>  
-    </div>
+  
 
-    <div class="helper" style="padding-top: 50px; background-color: #3c4053;">
+    <div class="helper" style="border-top: solid white 2px;">
       <section>
         <div class="container">
+          <h2 style="text-align: center; 
+          color: whitesmoke; 
+          text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8); 
+          margin-bottom: 50px;
+          font-size: 42px;
+          overflow-wrap: break-word;
+          padding-top: 100px;">Unser Wellnessangebot</h2>
           <div class="accordion">
             <div class="accordion-item" id="question1">
               <a class="accordion-link" href="#question1">
@@ -129,30 +121,13 @@
             </div>
             <div class="accordion-item" id="question2">
               <a class="accordion-link" href="#question2">
-                <p>Massage</p>
+                <p>Kinesiotaping</p>
                 <ion-icon class="helper2" name="add"></ion-icon>
                 <ion-icon class="helper3" name="remove"></ion-icon>
               </a>
               <div class="answer">
                 <p>
-                  Massage: Behandlungsdauer 20 Minuten <br>
-                  Massage: Behandlungsdauer 30 Minuten <br>
-                  Vollmassage: Behandlungsdauer 40 Minuten <br>
-                  Vollmassage: Behandlungsdauer 60 Minuten
-                </p>
-              </div>
-            </div>
-            <div class="accordion-item" id="question3">
-              <a class="accordion-link" href="#question3">
-               <p>Matrixtherapie</p>
-                <ion-icon class="helper2" name="add"></ion-icon>
-                <ion-icon class="helper3" name="remove"></ion-icon>
-              </a>
-              <div class="answer">
-                <p>
-                  Matrixtherapie: Behandlungsdauer 20 Minuten <br>
-                  Matrixtherapie: Behandlungsdauer 40 Minuten <br>
-                  Matrixtherapie: Behandlungsdauer 60 Minuten
+                  Tape-Anlagen bei Schmerzen, zur Stabilisierung oder um die Lymphbildung anzuregen.
                 </p>
               </div>
             </div>
@@ -164,7 +139,7 @@
               </a>
               <div class="answer">
                 <p>
-                  Erstellen eines Trainingsplans 60 Minuten
+                  Erstellen eines individuell auf Sie abgestimmten Trainingsplanes an diversen Trainingsgeräten
                 </p>
               </div>
             </div>
@@ -200,7 +175,7 @@
             </div>
             <div class="accordion-item" id="question7">
               <a class="accordion-link" href="#question7">               
-              <p>Schröpftherapie</p>
+              <p>Schröpfkopftherapie</p>
                 <ion-icon class="helper2" name="add"></ion-icon>
                 <ion-icon class="helper3" name="remove"></ion-icon>
               </a>
