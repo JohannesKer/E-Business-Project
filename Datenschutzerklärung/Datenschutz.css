@@ -109,7 +109,28 @@ body, html {
     font-weight: bold;
     color: whitesmoke; 
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+    content: w;
   }
+
+  @media(max-width: 350px){
+    h1 {
+      font-weight: bold;
+      color: whitesmoke; 
+      text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+      font-size: 20px;
+    }
+  }
+
+  @media(max-width: 250px){
+    h1 {
+      font-weight: bold;
+      color: whitesmoke; 
+      text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+      font-size: 14px;
+    }
+  }
+
+  
   
   p {
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
